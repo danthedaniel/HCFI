@@ -11,24 +11,24 @@ Interface for interacting with the HCFactions website - a web scraper
 
 First you'll need to import the module:
 
-  import hcfi
+    import hcfi
 
 Then you'll need to create your interface object:
 
-  hcf = hcfi.HCFI()
+    hcf = hcfi.HCFI()
 
 From there you can get player/faction data like so:
 
-  player = hcf.getPlayer('TeaEarlGray')
-  kills = player.data['Kills']
+    player = hcf.getPlayer('TeaEarlGray')
+    kills = player.data['Kills']
   
-  print('A true PvP master, ' + str(kills) + ' kills!')
+    print('A true PvP master, ' + str(kills) + ' kills!')
   
 Possible keys for the data dict are shown in the Regex patters that parse the <li> elements' text.
 
 Get Legendary's faction, and request all of it's member's data, one at a time
 
-  fac = hcf.getFaction('Legendary', True)
+    fac = hcf.getFaction('Legendary', True)
 
 **Notes**
 
