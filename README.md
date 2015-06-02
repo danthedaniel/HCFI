@@ -24,7 +24,7 @@ From there you can get player/faction data like so:
   
     print('A true PvP master, ' + str(kills) + ' kills!')
   
-Possible keys for the data dict are shown in the Regex patters that parse the <li> elements' text.
+Possible keys for the data dict are shown in the Regex patters that parse the &lt;li&gt; elements' text.
 
 Get Legendary's faction, and request all of it's member's data, one at a time
 
